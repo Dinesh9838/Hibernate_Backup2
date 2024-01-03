@@ -21,7 +21,7 @@ public class HibernateConfig {
 		ps.put(Environment.SHOW_SQL, "true");
 		ps.put(Environment.FORMAT_SQL, "true");
 //		ps.put(Environment.HBM2DDL_AUTO, "update");
-		ps.put(Environment.HBM2DDL_AUTO, "update");
+		ps.put(Environment.HBM2DDL_AUTO, "create");
 
 		StandardServiceRegistry ssr = new StandardServiceRegistryBuilder().applySettings(ps).build();
 		// Create a MetadataSources and add annotated entity classes
