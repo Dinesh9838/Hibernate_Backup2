@@ -18,10 +18,10 @@ import lombok.ToString;
 //@EqualsAndHashCode
 @Data
 public class Employee {
-//	@Override
-//	public String toString() {
-//		return "Employee [name=" + name + ", gender=" + gender + ", id=" + id + ", salary=" + salary + "]";
-//	}
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", gender=" + gender + ", id=" + id + ", salary=" + salary + "]";
+	}
 	@Column(name="userName")
 	private String name;
 	private String gender;
