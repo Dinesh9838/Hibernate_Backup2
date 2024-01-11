@@ -10,23 +10,23 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import Hibernate.entity.Employee;
 //import Hibernate.util.HibernateConfig;
-import Hibernate.util.HibernateConfig;
+//import Hibernate.util.HibernateConfig;
 
 public class App {
 
 	public static void main(String[] args) {
 		Employee vikas = new Employee();
 //		vikas.setId(5);
-		vikas.setName("Noida");
+		vikas.setName("RaviKumar");
 		vikas.setGender("Male");
-		vikas.setSalary(2000000);
+		vikas.setSalary(2110000);
 		
-//		StandardServiceRegistry ssr = new StandardServiceRegistryBuilder().configure().build();
-//		Metadata meta = new MetadataSources(ssr).getMetadataBuilder().build();
-//		SessionFactory sf = meta.buildSessionFactory();		
+		StandardServiceRegistry ssr = new StandardServiceRegistryBuilder().configure().build();
+		Metadata meta = new MetadataSources(ssr).getMetadataBuilder().build();
+		SessionFactory sf = meta.buildSessionFactory();		
 		
 		
-		SessionFactory sf = HibernateConfig.getSessionFactory();
+//		SessionFactory sf = HibernateConfig.getSessionFactory();
 		Session session = sf.openSession();
 		Transaction tx = session.beginTransaction();
 		

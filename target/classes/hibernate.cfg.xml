@@ -1,4 +1,4 @@
-<!--  <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
 	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
@@ -6,7 +6,7 @@
 	<hibernate-configuration>
 	      <session-factory>
 	      <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-	      <property name="connection.url">jdbc:mysql://localhost:3306/Silverdata</property>
+	      <property name="connection.url">jdbc:mysql://localhost:3306/micro</property>
 	      <property name="hibernate.connection.driverclass">com.mysql.cj.jdbc.Driver</property>
 	      <property name="connection.username">root</property>
 	      <property name="connection.password">Dinesh@123</property>
@@ -16,4 +16,4 @@
 	      
 	      <mapping resource="Employee.hbm.xml"/>
 	      </session-factory>
-	</hibernate-configuration> -->
+	</hibernate-configuration>
